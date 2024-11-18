@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이유 팬페이지</title>
+   <link rel="stylesheet" href="main_style.css">
+   <style>
+ 
+header h1 {
+            color: #2d3142;
+            margin: 0;
+        }
+
+        .content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .content p {
+            font-size: 20px;
+            color: #2d3142;
+        }
+       
+        .social-links {
+            margin-top: 30px;
+        }
+        .social-links a {
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; 
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+       <a href="index.html">
+       <img src="images(WEB)\logo.jpg" width="220px" height="200px" alt="팬 페이지 로고">
+   </a>
+        <h3 style="position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: small;">202100466 이재윤</h3>
+    </header>
+
+    <nav id="top_menu">
+        <a href="info.html">정보 소개</a>
+        <a href="IU_news.html"> IU 소식</a>
+        <a href="cheering.html">응원의 한마디</a>
+        <a href="recommend.html">작품 추천</a>
+    </nav>
+
+    <div class="content">
+        <h2>아이유와 함께하는 공간에 오신 것을 환영합니다!</h2>
+        <p>아이유의 음악과 이야기를 이곳에서 함께 나누세요.</p>
+    <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/kHW-UVXOcLU" 
+    title="YouTube video player" 
+    frameborder="0">
+</iframe>
+<aside>
+    <button onclick="like()">❤️ 좋아요 <span id="likeCount">0</span></button>
+</aside>
+<script>
+    let count = 0;
+    function like() {
+        count++;
+        document.getElementById("likeCount").textContent = count;
+    }
+</script>
+
+</aside>
+
+<footer>
+        <div class="social-links">
+            <h3>아이유 공식 채널</h3>
+            <a href="https://www.instagram.com/dlwlrma" target="_blank">
+                <img src="images(WEB)\instagram.jpeg" alt="인스타그램">
+            </a>
+            <a href="https://www.youtube.com/@dlwlrma" target="_blank">
+                <img src="images(WEB)\youtube.jpeg" alt="유튜브">
+            </a>
+            <a href="https://cafe.daum.net/IU" target="_blank">
+                <img src="images(WEB)\daumcafe.jpeg" alt="아이유 팬카페">
+            </a>
+            <a href="https://www.facebook.com/iu.loen" target="_blank">
+                 <img src="images(WEB)\facebook.jpeg">
+            </a>
+            <a href="https://x.com/_IUofficial" target="_blank">
+                <img src="https://pbs.twimg.com/profile_images/1683503179097358341/4gUizsT__400x400.jpg">
+            </a>
+            <a href="https://www.tiktok.com/@_iuofficial" target="_blank">
+                <img src="https://i.namu.wiki/i/sb8ETQWSuf1-ZPvkbCa13HLLm788d4touEO4kPFtZp_DCqBIXp3moSy67NL8qdZAJSotQ-SSr8F7klWlQfz0JA.svg">
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>

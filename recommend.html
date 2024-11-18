@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작품 추천</title>
+    <link rel="stylesheet" href="main_style.css">        
+    <style>
+   
+        nav {
+            display: flex;
+            flex-direction: column;
+            background-color: #ff8fab;
+            padding: 15px;
+            width: 150px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+        }
+
+        nav a {
+            margin: 10px 0;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ff6f92;
+        }
+
+        .main_container {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;  
+            width: 100%;
+            margin-left: 100px;
+           
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            width: 30%;
+            padding: 20px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .image img {
+            width: 100%;
+            border-radius: 8px;
+          
+        }
+
+        .content {
+            width: 40%;
+            padding: 20px;
+        }
+
+        .lyrics {
+            width: 30%;
+            margin: 20px auto;
+            border: 2px solid #302f2a;
+            background-color: #302f2a;
+            text-align: center;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 12px; 
+            line-height: 1.4; 
+        }
+
+        .lyrics strong {
+            font-size: 16px; 
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .lyrics p {
+            margin: 10px 0;
+            color: #000;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        iframe {
+            border-radius: 8px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="images(WEB)\logo.jpg"
+                width="220px" height="200px" alt="아이유 팬 페이지 로고">
+        </a>
+        <div id="top_menu">
+            <a href="info.html">정보 소개</a>
+            <a href="IU_news.html"> IU 소식</a>
+            <a href="cheering.html">응원의 한마디</a>
+            <a href="recommend.html">작품 추천</a>
+        </div>
+    </header>
+
+   
+    <nav>
+        <a href="#first_music">밤편지</a>
+        <a href="#second_music">내 손을 잡아</a>
+        <a href="#first_drama">나의 아저씨</a>
+        <a href="#second_drama">호텔 델루나</a>
+    </nav>
+
+    <div class="main_container">
+   
+        <div id="first_music" class="container">
+            <div class="image">
+                <img src="images(WEB)\nigjt_letter.jpg" alt="아이유 밤편지 앨범 이미지">
+                <iframe 
+                    width="550" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/6744glqD6lk?si=aiOtqSmHN7lG3y_H" 
+                    title="YouTube video player" 
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>   
+            </div>
+            <div class="content">
+                <h2>아이유 - 밤편지</h2>
+                <p><b>1. 곡의 배경과 의미</b></p>
+                <p><b>"밤편지"</b>는 하루의 끝에서 느낄 수 있는 감정들을 담아낸 곡으로, 마치 누군가에게 진심을 담은 편지를 써 내려가듯이 조심스럽고 애틋한 마음을 표현하고 있습니다. 이 곡은 아이유가 직접 작사에 참여하여 그녀의 진솔한 감정과 생각을 가사에 담아내어 더욱 진정성이 느껴집니다. 특히, 과거의 추억을 떠올리며 현재의 소중함을 느끼게 하는 곡으로, 많은 이들에게 위로와 공감을 주는 곡으로 자리 잡았습니다.</p>
+                <p><b>2. 수상 및 성과</b></p>
+                <p><b>"밤편지"</b>는 발표 당시 각종 음원 차트에서 1위를 차지하며, 아이유의 음악적 역량과 대중적 인기를 입증했습니다. 뿐만 아니라, 2017년 멜론 뮤직 어워드에서 '올해의 앨범' 상을 수상하는 등 다양한 시상식에서 높은 평가를 받았습니다. 이 곡은 단순히 상업적 성공뿐만 아니라, 음악적 완성도와 예술적 가치를 인정받은 곡이기도 합니다.</p>
+                <p><strong>추천 키워드</strong></p>
+                <p>#감성적인 #잔잔한 #위로 #힐링 #어쿠스틱</p>
+            </div>
+            <aside class="lyrics">
+                <p>
+                    <strong>〈밤편지〉</strong>
+                    이 밤 그날의 반딧불을<br>
+                    당신의 창 가까이 보낼게요<br>
+                    음 사랑한다는 말이에요<br><br>
+                    나 우리의 첫 입맞춤을 떠올려<br>
+                    그럼 언제든 눈을 감고<br>
+                    음 가장 먼 곳으로 가요<br><br>
+                    난 파도가 머물던<br>
+                    모래 위에 적힌 글씨처럼<br>
+                    그대가 멀리 사라져 버릴 것 같아<br>
+                    늘 그리워 그리워<br><br>
+                    여기 내 마음속에<br>
+                    모든 말을 다 꺼내어 줄 순 없지만<br>
+                    사랑한다는 말이에요<br><br>
+                    어떻게 나에게<br>
+                    그대란 행운이 온 걸까<br>
+                    지금 우리 함께 있다면 아<br>
+                    얼마나 좋을까요<br><br>
+                    난 파도가 머물던<br>
+                    모래 위에 적힌 글씨처럼<br>
+                    그대가 멀리 사라져 버릴 것 같아<br>
+                    또 그리워 더 그리워<br><br>
+                    나의 일기장 안에<br>
+                    모든 말을 다 꺼내어 줄 순 없지만<br>
+                    사랑한다는 말<br><br>
+                    이 밤 그날의 반딧불을<br>
+                    당신의 창 가까이 띄울게요<br>
+                    음 좋은 꿈 이길 바라요
+                </p>
+            </aside>
+        </div>
+
+        <div id="second_music" class="container">
+            <div class="image">
+                <img src="images(WEB)\greatest_love.jpeg" alt="아이유 내 손을 잡아 앨범 이미지">
+                <br><br>
+                <iframe 
+                    width="550" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/3iM_06QeZi8?si=JYargXzgWiT5L-d4" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="content">
+                <h2>아이유 - 내 손을 잡아</h2>
+                <p><b>1. 곡의 배경과 의미</b></p>
+                <p><b>"내 손을 잡아"</b>는 2011년 발매된 아이유의 곡으로, 드라마 *'최고의 사랑'*의 OST로 삽입되어 큰 인기를 끌었습니다. 이 곡은 아이유가 직접 작사 작곡을 하였으며, 맑고 청아한 목소리와 밝고 경쾌한 멜로디가 어우러져 듣는 이로 하여금 기분 좋은 설렘을 느끼게 합니다. 가사에서는 사랑하는 사람에게 손을 내밀며 함께 하기를 바라는 따뜻한 메시지를 담고 있어, 사랑의 시작 단계에서 느낄 수 있는 두근거림과 희망을 잘 표현하고 있습니다.</p>
+                <p><b>2. 수상 및 성과</b></p>
+                <p><b>"내 손을 잡아"</b>는 발매 직후 음원 차트에서 상위권을 차지하며 많은 사랑을 받았습니다. 특히, 드라마 *'최고의 사랑'*의 인기와 더불어 이 곡 또한 큰 인기를 끌며 아이유의 OST로서의 역량을 입증했습니다. 아이유의 부드러운 보컬과 경쾌한 리듬이 어우러져 다양한 연령층의 청취자들에게 사랑받는 곡으로 자리 잡았습니다. 2019년 투어 콘서트 [Love,Poem]의 서울 공연에서 오랜만에 선보였습니다. 그 후 직캠과 블루레이 그리고 특정 파트가 SNS를 통해 퍼지면서 역주행을 하게 됩니다.</p>
+                <p><strong>추천 키워드</strong></p>
+                <p>#달콤한 #경쾌한 #사랑 #희망찬 #OST</p>
+            </div>
+            <aside class="lyrics">
+                <p>
+                    <strong>〈내 손을 잡아〉</strong>
+            느낌이 오잖아 떨리고 있잖아<br>
+            언제까지 눈치만 볼 거니<br>
+            네 맘을 말해봐 딴청 피우지 말란 말이야<br>
+            네 맘 가는 그대로 지금 내 손을 잡아<br>
+            어서 내 손을 잡아<br><br>
+            우연히 고개를 돌릴 때마다<br>
+            눈이 마주치는 건<br>
+            며칠 밤 내내 꿈속에 나타나<br>
+            밤새 나를 괴롭히는 건<br><br>
+            그 많은 빈자리 중에서 하필<br>
+            내 옆자릴 고르는 건<br>
+            나도 모르게 어느새 실없는 웃음<br>
+            흘리고 있다는 건<br><br>
+            그럼 말 다했지 뭐 우리 얘기 좀 할까<br><br>
+            느낌이 오잖아 떨리고 있잖아<br>
+            언제까지 눈치만 볼 거니<br>
+            네 맘을 말해봐 딴청 피우지 말란 말이야<br>
+            네 맘 가는 그대로 지금 내 손을 잡아<br><br>
+            핸드폰 진동에 심장이 덜컥<br>
+            내려 앉는다는 건<br>
+            오 나도 모르게 어느새 짓궂은 네 말투<br>
+            자꾸 듣고 싶은 걸<br><br>
+            어떡해<br>
+            (저기 멀리 걸어온다)<br>
+            (눈이 마주친다)<br>
+            언제까지 넌 모른 척할 거니<br><br>
+            사랑이 온 거야 너와 나 말이야<br>
+            네가 좋아 정말 못 견딜 만큼<br>
+            그거면 된 거야 더는 생각하지 말란 말이야<br>
+            네 맘 가는 그대로<br><br>
+            느낌이 오잖아 떨리고 있잖아<br>
+            언제까지 눈치만 볼 거니<br>
+            네 맘을 말해봐 딴청 피우지 말란 말이야<br>
+            네 맘 가는 그대로 지금 내 손을 잡아<br><br>
+            그냥 내 손을 잡아<br>
+            지금 내 손을 잡아
+                </p>
+            </aside>
+        </div>
+
+     
+        <div id="first_drama" class="container">
+            <div class="image">
+                <img src="images(WEB)\my_mister.jpeg" alt="나의 아저씨 드라마 포스터">
+            </div>
+        
+            <div class="content">
+                <h2>나의 아저씨</h2>
+                <p><b>1. 드라마 소개</b></p>
+                <p><b>"나의 아저씨"</b>는 2018년에 방영된 tvN 드라마로, 중년 남성과 젊은 여성이 각자의 상처를 치유하며 삶의 무게를 버텨가는 이야기를 그립니다. 주연을 맡은 이선균과 아이유(이지은)의 깊이 있는 연기와 섬세한 연출로 큰 사랑을 받았으며, 사회적 메시지와 감동적인 스토리로 많은 이들에게 위로를 주었습니다.</p>
+                <p><b>2. 수상 및 성과</b></p>
+                <p>드라마 <b>"나의 아저씨"</b>는 방영 당시 시청률과 비평 모두에서 성공을 거두었습니다. 백상예술대상 TV 부문에서 최우수 작품상을 수상하며, 그 작품성과 완성도를 인정받았습니다. 특히, 아이유는 이 드라마에서 보여준 연기력으로 대중과 평단 모두에게 큰 호평을 받으며 연기자로서의 입지를 다졌습니다.</p>
+                <p><strong>추천 키워드</strong></p>
+                <p>#힐링 #감동 #인생드라마 #치유 #휴머니즘</p>
+            </div>
+        </div>
+        <div id="second_drama" class="container">
+            <div class="image">
+                <img src="images(WEB)\hotel_delluna.jpeg" alt="호텔 델루나 드라마 포스터">
+            </div>
+        
+            <div class="content">
+                <h2>호텔 델루나</h2>
+                <p><b>1. 드라마 소개</b></p>
+                <p><b>"호텔 델루나"</b>는 2019년에 방영된 tvN 드라마로, 죽은 자들만이 머물 수 있는 신비한 호텔 '델루나'의 이야기와 그곳을 운영하는 장만월 사장과 구찬성 지배인의 이야기를 그린 판타지 로맨스 드라마입니다. 주연을 맡은 이지은(아이유)과 여진구의 완벽한 케미와 독특한 설정으로 많은 시청자들의 사랑을 받았습니다. 이 드라마는 아름다운 영상미와 음악, 그리고 감동적인 스토리로 큰 화제를 모았습니다.</p>
+                <p><b>2. 수상 및 성과</b></p>
+                <p>드라마 <b>"호텔 델루나"</b>는 방영 당시 높은 시청률을 기록하며 화제를 모았습니다. 백상예술대상 TV 부문에서 다수의 상을 수상하였으며, 아이유는 이 작품에서의 연기로 여러 연기상을 수상하며 연기자로서의 입지를 더욱 굳혔습니다. 또한, OST 역시 큰 인기를 끌며 음원 차트에서 상위권을 차지했습니다.</p>
+                <p><strong>추천 키워드</strong></p>
+                <p>#판타지 #로맨스 #감동 #음악 #미스터리</p>
+            </div>
+        </div>
+    </div>        
+  
+</body>
+</html>
