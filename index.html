@@ -67,6 +67,7 @@ header h1 {
 </iframe>
 <aside>
     <button onclick="like()">❤️ 좋아요 <span id="likeCount">0</span></button>
+    <button onclick="random_say_lyric()">오늘의 한 마디</button>
 </aside>
 <script>
     let count = 0;
@@ -74,6 +75,36 @@ header h1 {
         count++;
         document.getElementById("likeCount").textContent = count;
     }
+</script>
+        <script>
+ function random_say_lyric() {
+   
+    const say = [
+        //말     
+        "힘들 땐 어떻게 이겨내나요? - 가끔, 져요.",
+        "기분이 안 좋을 때 푸는 법은? - 그럴 땐 빨리 몸을 움직여야 돼요. 집 안에라도 돌아다니고, 설거지라도 갑자기 한다든지.",
+        "힐링이란? - 멈춤. 치유가 되려면 확실히 좀 멈춰야 하는 것 같아요.",
+        "너무 매사에 걱정하지 말고 다 지나간다. 아무것도 아니다. 걱정하지 마.",
+        "저를 싫어하는 사람까지 절 좋아하게 만들 만큼 전 대인배가 아니거든요. 절 싫어하는 사람은 저도 안 좋아하면 그만이니까.",
+        "하나를 잃으면 하나를 얻고, 하나를 얻으면 하나를 잃는다는 말을 되새김질하며 살고 있어요.",
+        "응원 주고 싶은 마음이 생기시면 그때 응원해주세요. 그런 관계도 있는 거다.",
+        //가사
+        "잊지 마 넌 흐린 어둠 사이 왼손으로 그린 별 하나 - 'Celebrity'",
+        "누구나 조금씩은 틀려 완벽한 사람은 없어 - '비밀의 화원'",
+        "하루 정도는 행복하지 않아도 괜찮아 - 'Unlucky'",
+        "나 지친 것 같아 이 정도면 오래 버틴 것 같아 - '무릎'",
+        "꽃잎이 번지면 당신께도 새로운 봄이 오겠죠. 시간이 걸려도 그대 반드시 행복해지세요. - 'Love poem'"
+    ];
+
+    
+    const randomIndex = Math.floor(Math.random() * say.length);
+    const randomItem = say[randomIndex];
+
+
+  
+    alert(`"${randomItem}"`);
+}
+
 </script>
 
 </aside>
