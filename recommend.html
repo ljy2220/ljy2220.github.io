@@ -98,6 +98,9 @@
             border-radius: 8px;
             max-width: 100%;
         }
+        #recommendation{
+            margin-left: 20%;
+        }
     </style>
 </head>
 <body>
@@ -279,7 +282,40 @@
                 <p>#판타지 #로맨스 #감동 #음악 #미스터리</p>
             </div>
         </div>
-    </div>        
+    </div>
+     <div id="recommendation">
+    <h2>당신의 작품 추천을 써주세요</h2>
+    <input type="text" id="reco" placeholder="추천하는 작품을 입력하세요" >
+    <input type="button" value="추가" onclick="add()">
+    <ul id="result"></ul>
+    </div>
+    <script>
+        function add() {
+            const content = document.getElementById("reco").value.trim(); // 입력 값 가져오기
+            if (content !== "") { // 입력 값이 비어 있지 않은 경우
+                const li = document.createElement("li");
+        li.style.padding = "10px";
+        li.style.marginBottom = "10px";
+        li.style.backgroundColor = "#fff3f8";
+        li.style.border = "1px solid #ddd";
+        li.style.borderRadius = "5px";
+        li.style.marginRight = "90%";
+        li.style.width = "80%"; 
+        li.style.textAlign = "center";
+        
+    
+                
+                li.textContent = content;
+    
+                document.getElementById("result").appendChild(li);
+    
+        
+                document.getElementById("reco").value = "";
+            } else {
+                alert("추천 작품을 입력하세요!");
+            }
+        }
+    </script>
   
 </body>
 </html>
