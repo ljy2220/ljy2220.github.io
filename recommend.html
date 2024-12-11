@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -7,100 +8,144 @@
     <link rel="stylesheet" href="main_style.css">        
     <style>
    
-        nav {
-            display: flex;
-            flex-direction: column;
-            background-color: #ff8fab;
-            padding: 15px;
-            width: 150px;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            bottom: 0;
-        }
+        /* 내비게이션 스타일 */
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff8fab;
+    padding: 15px;
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
 
-        nav a {
-            margin: 10px 0;
-            color: white;
-            font-size: 18px;
-            text-decoration: none;
-        }
+nav a {
+    margin: 10px 0;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
 
-        nav a:hover {
-            background-color: #ff6f92;
-        }
+nav a:hover {
+    background-color: #ff6f92;
+}
 
-        .main_container {
-            display: flex;
-            flex-direction: column; 
-            align-items: center;  
-            width: 100%;
-            margin-left: 100px;
-           
-        }
+/* 메인 컨테이너 */
+.main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: 100px;
+}
 
-        .container {
-            display: flex;
-            width: 80%;
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
+/* 컨텐츠 박스 스타일 */
+.container {
+    display: flex;
+    width: 80%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
 
-        .image {
-            width: 30%;
-            padding: 20px;
-            margin-top: auto;
-            margin-bottom: auto;
-        }
+.image {
+    width: 30%;
+    padding: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
-        .image img {
-            width: 100%;
-            border-radius: 8px;
-          
-        }
+.image img {
+    width: 100%;
+    border-radius: 8px;
+}
 
-        .content {
-            width: 40%;
-            padding: 20px;
-        }
+.content {
+    width: 40%;
+    padding: 20px;
+}
 
-        .lyrics {
-            width: 30%;
-            margin: 20px auto;
-            border: 2px solid #302f2a;
-            background-color: #302f2a;
-            text-align: center;
-            color: #fff;
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            border-radius: 5px;
-            font-size: 12px; 
-            line-height: 1.4; 
-        }
+.lyrics {
+    width: 30%;
+    margin: 20px auto;
+    border: 2px solid #302f2a;
+    background-color: #302f2a;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 1.4;
+}
 
-        .lyrics strong {
-            font-size: 16px; 
-            margin-bottom: 10px;
-            display: block;
-        }
+.lyrics strong {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+}
 
-        .lyrics p {
-            margin: 10px 0;
-            color: #000;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-        }
+.lyrics p {
+    margin: 10px 0;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
 
-        iframe {
-            border-radius: 8px;
-            max-width: 100%;
-        }
-        #recommendation{
-            margin-left: 20%;
-        }
+iframe {
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+
+.recommend-container {
+    width: 60%;
+    margin: 50px auto; 
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 8px; 
+   
+}
+
+.recommend {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.input-field {
+    width: 80%;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ff8fab;
+    color: white;
+}
+
+
+
+
     </style>
 </head>
 <body>
@@ -123,6 +168,7 @@
         <a href="#second_music">내 손을 잡아</a>
         <a href="#first_drama">나의 아저씨</a>
         <a href="#second_drama">호텔 델루나</a>
+        <a href="#recommend">작품 추천 하기</a>
     </nav>
 
     <div class="main_container">
@@ -282,40 +328,49 @@
                 <p>#판타지 #로맨스 #감동 #음악 #미스터리</p>
             </div>
         </div>
+    </div> 
+    <div id="recommend" class="recommend-container">
+        <h2 style="text-align: center;">작품 추천 하기</h2>
+        <div class="recommend">
+            <label for="name">작품 이름</label>
+            <input type="text" id="name" class="input-field">
+            <br>
+            <label for="why">추천 이유</label>
+            <input type="text" id="why" class="input-field">
+            <br>
+            <button onclick="addContact()">추가</button>
+        </div>
+        <div class="recommend">
+            <h2 style="text-align: center;">검색하기</h2>
+            <label for="searchName">작품 이름</label>
+            <input type="text" id="searchName" class="input-field">
+            <br>
+            <button onclick="searchContact()">검색</button>
+            <button onclick="displayAllContacts()">DB보기</button>
+        </div>
+        <div class="recommend">
+            <table>
+                <thead>
+                    <tr>
+                        <th>작품</th>
+                        <th>이유</th>
+                        <th>삭제</th>
+                       
+                    </tr>
+                </thead>
+                <tbody id="contactsTable">
+                    
+                </tbody>
+            </table>
+        </div>
     </div>
-     <div id="recommendation">
-    <h2>당신의 작품 추천을 써주세요</h2>
-    <input type="text" id="reco" placeholder="추천하는 작품을 입력하세요" >
-    <input type="button" value="추가" onclick="add()">
-    <ul id="result"></ul>
-    </div>
-    <script>
-        function add() {
-            const content = document.getElementById("reco").value.trim(); // 입력 값 가져오기
-            if (content !== "") { // 입력 값이 비어 있지 않은 경우
-                const li = document.createElement("li");
-        li.style.padding = "10px";
-        li.style.marginBottom = "10px";
-        li.style.backgroundColor = "#fff3f8";
-        li.style.border = "1px solid #ddd";
-        li.style.borderRadius = "5px";
-        li.style.marginRight = "90%";
-        li.style.width = "80%"; 
-        li.style.textAlign = "center";
-        
-    
-                
-                li.textContent = content;
-    
-                document.getElementById("result").appendChild(li);
-    
-        
-                document.getElementById("reco").value = "";
-            } else {
-                alert("추천 작품을 입력하세요!");
-            }
-        }
-    </script>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
+
+   
+
   
 </body>
 </html>
