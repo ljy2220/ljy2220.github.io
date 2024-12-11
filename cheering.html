@@ -17,7 +17,6 @@
             background-color: white;
         }
 
-  
         .form-section {
             margin-top: 20px;
             padding: 15px;
@@ -40,7 +39,6 @@
             border-radius: 5px;
             font-size: 1em;
             margin-bottom: 10px;
-    
         }
 
         .form-section button {
@@ -56,32 +54,58 @@
         .form-section button:hover {
             background-color: #ff6f92;
         }
+
         #message {
-    width: 98%; 
-    height: 100px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
+            width: 98%;
+            height: 100px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
 
+        .message-display {
+            margin-top: 30px;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
 
+        .message-display h2 {
+            color: #020202;
+        }
+
+        .message-display ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .message-display li {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 1em;
+            line-height: 1.5;
+        }
     </style>
 </head>
-<header>
-    <a href="index.html">
-        <img src="images_WEB/logo.jpg"
-            width="220px" height="200px" alt="아이유 팬 페이지 로고">
-    </a>
-    <div id="top_menu">
-        <a href="info.html">정보 소개</a>
-        <a href="IU_news.html"> IU 소식</a>
-        <a href="cheering.html">응원의 한마디</a>
-        <a href="recommend.html">작품 추천</a>
-    </div>
-
 
 <body>
+    <header>
+        <a href="index.html">
+            <img src="images_WEB/logo.jpg" width="220px" height="200px" alt="아이유 팬 페이지 로고">
+        </a>
+        <div id="top_menu">
+            <a href="info.html">정보 소개</a>
+            <a href="IU_news.html"> IU 소식</a>
+            <a href="cheering.html">응원의 한마디</a>
+            <a href="recommend.html">작품 추천</a>
+        </div>
+    </header>
+
     <div class="container">
-        <h1 style="color: #020202;" >아이유에게 응원의 한마디</h1>
+        <h1 style="color: #020202;">아이유에게 응원의 한마디</h1>
         <div class="form-section">
             <label for="message">당신의 메시지를 입력하세요:</label>
             <textarea id="message" placeholder="아이유에게 전하고 싶은 말을 적어주세요..."></textarea>
@@ -89,16 +113,15 @@
         </div>
     </div>
 
-    <script>
-        function sendMessage() {
-            const message = document.getElementById('message').value;
-            if (message.trim() !== '') {
-                alert('응원 완료!' );
-            } else {
-                alert('메시지를 입력해주세요!');
-            }
-        }
-    </script>
+    <div class="container message-display">
+        <h2>응원 메시지 목록</h2>
+        <ul id="messageList">
+         
+        </ul>
+    </div>
+
+    <script src="/js/cheering.js"></script>
+    
 </body>
 
 </html>
